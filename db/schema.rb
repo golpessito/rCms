@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180307094950) do
+ActiveRecord::Schema.define(version: 20180307110007) do
 
   create_table "active_admin_comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "namespace"
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 20180307094950) do
     t.boolean  "menu_display"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.boolean  "featured"
   end
 
   create_table "sections", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
